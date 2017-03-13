@@ -19,7 +19,6 @@ public abstract class TabActivity extends AppCompatActivity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
         outState.putInt(CUR_TAB, curTab);
         super.onSaveInstanceState(outState);
     }
@@ -79,7 +78,5 @@ public abstract class TabActivity extends AppCompatActivity {
     protected abstract int getFragmentSize();
 
     protected abstract Fragment getFragment(int pos);
-
-
 
 }
